@@ -6,14 +6,13 @@ export function PublicFooter() {
     <footer className="bg-muted">
       <div className="container py-8 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <Bot className="w-6 h-6 text-primary" />
-          <span className="font-bold text-lg">Kasparro</span>
+          <Bot className="w-6 h-6 text-muted-foreground" />
+          <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Kasparro. All rights reserved.</p>
         </div>
-        <nav className="flex items-center gap-4 text-sm">
-            <Link href="/about" className="text-muted-foreground hover:text-foreground">About</Link>
-            <Link href="/platform" className="text-muted-foreground hover:text-foreground">Platform</Link>
-        </nav>
-        <p className="text-xs text-muted-foreground">&copy; {new Date().getFullYear()} KasparroAI. All rights reserved.</p>
+        <div className="flex items-center gap-4">
+            <Link href="/about" className="text-sm text-muted-foreground hover:text-primary">About</Link>
+            <Link href="/platform" className="text-sm text-muted-foreground hover:text-primary">Platform</Link>
+        </div>
       </div>
     </footer>
   );

@@ -1,66 +1,69 @@
-"use client";
-
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CheckCircle } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Check, ShieldCheck, Target, BrainCircuit, BookOpen, LineChart, VenetianMask } from "lucide-react";
 
 const modules = [
-  { 
-    id: "serp-analysis",
-    name: "SERP Analysis",
-    description: "Deconstructs AI-generated search results to pinpoint how your brand is being represented and where you can improve.",
-    features: ["AI Summary Visibility", "Source & Citation Tracking", "Competitor Comparison"]
-  },
-  { 
-    id: "content-quality",
-    name: "Content Quality",
-    description: "Audits your content for originality, depth, and clarity, ensuring it's a prime source for AI models.",
-    features: ["Originality Scoring", "Fact-Checking Assistance", "Semantic Richness Analysis"]
-  },
-  { 
-    id: "eeat",
-    name: "E-E-A-T Signals",
-    description: "Evaluates your site's Experience, Expertise, Authoritativeness, and Trust signals—critical for high-stakes topics.",
-    features: ["Author Credibility Audit", "Trust Signal Identification", "Knowledge Graph Alignment"]
+  {
+    icon: LineChart,
+    title: "SERP Analysis & Visibility",
+    description: "Monitors your brand's presence in AI-generated answers and traditional search results for your target keywords."
   },
   {
-    id: "brand-narrative",
-    name: "Brand Narrative",
-    description: "Analyzes how AI perceives and communicates your brand story, ensuring it's consistent and compelling.",
-    features: ["Narrative Consistency Check", "Sentiment Analysis in AI Answers", "Key Message Penetration"]
+    icon: Check,
+    title: "Content Quality & Originality",
+    description: "Audits your content for originality, depth, and clarity, ensuring it's seen as a primary source by AI."
+  },
+  {
+    icon: ShieldCheck,
+    title: "E-E-A-T & Trust Signals",
+    description: "Evaluates your site's Experience, Expertise, Authoritativeness, and Trustworthiness signals from an AI's perspective."
+  },
+  {
+    icon: BrainCircuit,
+    title: "Knowledge Graph Alignment",
+    description: "Analyzes your brand's representation in major knowledge graphs like Google's and identifies optimization opportunities."
+  },
+  {
+    icon: Target,
+    title: "Semantic SEO & User Intent",
+    description: "Ensures your content is semantically aligned with the topics you want to own and matches user search intent."
+  },
+  {
+    icon: BookOpen,
+    title: "Brand Narrative & Perception",
+    description: "Tracks how AI models perceive your brand narrative and compares it against your desired positioning."
+  },
+   {
+    icon: VenetianMask,
+    title: "Competitive Intelligence",
+    description: "Provides insights into your competitors' AI search strategies and visibility."
   }
 ];
 
 export function CoreModules() {
   return (
-    <section className="bg-muted py-20 sm:py-32">
+    <section className="py-16 sm:py-24 bg-muted/40">
       <div className="container">
-        <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">The Kasparro Audit Modules</h2>
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">The Kasparro Audit Framework</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Our seven proprietary modules work in concert to give you an unparalleled view of your brand's standing in the AI search ecosystem.
+            Our platform runs a comprehensive, multi-layered audit to give you a complete picture of your AI search readiness. We analyze seven core modules.
           </p>
         </div>
-        
-        <div className="mt-12 max-w-4xl mx-auto">
-          <Accordion type="single" collapsible defaultValue="serp-analysis" className="w-full">
-            {modules.map(module => (
-              <AccordionItem value={module.id} key={module.id}>
-                <AccordionTrigger className="text-lg font-semibold hover:no-underline">{module.name}</AccordionTrigger>
-                <AccordionContent>
-                    <p className="mb-4 text-muted-foreground">{module.description}</p>
-                    <ul className="space-y-2">
-                        {module.features.map(feature => (
-                            <li key={feature} className="flex items-center gap-2">
-                                <CheckCircle className="h-5 w-5 text-green-500"/>
-                                <span>{feature}</span>
-                            </li>
-                        ))}
-                    </ul>
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+        <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {modules.map((module) => {
+            const Icon = module.icon;
+            return (
+              <Card key={module.title}>
+                <CardHeader>
+                  <Icon className="h-8 w-8 mb-2 text-primary" />
+                  <CardTitle>{module.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription>{module.description}</CardDescription>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>
