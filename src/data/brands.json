@@ -1,0 +1,5 @@
+[
+  { "id": "acme", "name": "Acme Inc." },
+  { "id": "stark", "name": "Stark Industries" },
+  { "id": "wayne", "name": "Wayne Enterprises" }
+]

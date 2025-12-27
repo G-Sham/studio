@@ -1,3 +1,22 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "Abstract network of nodes representing AI",
+      "imageUrl": "https://images.unsplash.com/photo-1738082956257-06cde4444b1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhYnN0cmFjdCUyMG5ldHdvcmt8ZW58MHx8fHwxNzY2ODEyNzQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract network"
+    },
+    {
+      "id": "why-ai-seo",
+      "description": "A magnifying glass over digital text",
+      "imageUrl": "https://images.unsplash.com/photo-1720069004713-f72d26684a87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkaWdpdGFsJTIwdGV4dHxlbnwwfHx8fDE3NjY3MTc4ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "digital text"
+    },
+    {
+      "id": "how-it-works",
+      "description": "A visual representation of a data pipeline",
+      "imageUrl": "https://images.unsplash.com/photo-1613690168541-992f5e5d9ae0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkYXRhJTIwcGlwZWxpbmV8ZW58MHx8fHwxNzY2ODEyNzQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data pipeline"
+    }
+  ]
 }

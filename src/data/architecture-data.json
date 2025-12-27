@@ -1,0 +1,6 @@
+[
+  { "id": "input", "name": "InputAssembler", "description": "Gathers raw data from your website, Google Search Console, and the public web to form a foundational dataset.", "connections": ["context"] },
+  { "id": "context", "name": "ContextPack", "description": "Structures, cleans, and enriches the input data into a unified, machine-readable model of your brand's digital presence.", "connections": ["modules"] },
+  { "id": "modules", "name": "Audit Modules", "description": "A set of seven specialized AI agents that analyze the ContextPack, each focusing on a different facet of AI-SEO performance.", "connections": ["output"] },
+  { "id": "output", "name": "Output Surfaces", "description": "Synthesizes findings from all modules into dashboards, reports, and prioritized recommendations for human review.", "connections": [] }
+]
