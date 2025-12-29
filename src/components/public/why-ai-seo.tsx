@@ -8,18 +8,18 @@ import { Zap, MessageCircle, BarChart } from "lucide-react";
 const features = [
     {
         icon: Zap,
-        title: "The Shift to Answers",
-        description: "Search is moving from a list of links to direct answers. If your brand isn't the source of that answer, you're invisible. Kasparro helps you become the authoritative source in your niche."
+        title: "From Links to Direct Answers",
+        description: "Google SGE and Perplexity don't just list links—they generate answers. If your brand isn't cited in that generated text, you are invisible to the modern user."
     },
     {
         icon: MessageCircle,
-        title: "Narrative is the New Ranking",
-        description: "AI models build a narrative about your brand from all available data. We help you understand and shape that narrative, ensuring it aligns with your strategic goals."
+        title: "Optimizing for LLM Context",
+        description: "Models like GPT-4 and Claude build narratives from your entity density. We help you structure content so these models understand your authority and cite you as a primary source."
     },
     {
         icon: BarChart,
-        title: "A New Set of Metrics",
-        description: "Traditional SEO metrics are becoming obsolete. We provide the first-ever AI Visibility Score, Trust Score, and more, giving you the data you need to compete."
+        title: "New Metrics for a New Era",
+        description: "Traditional rank tracking is obsolete. We track your 'Share of Model'—how often your brand appears in AI-generated responses across different personas and prompts."
     }
 ];
 
