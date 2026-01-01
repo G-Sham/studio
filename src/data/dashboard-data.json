@@ -1,5 +1,0 @@
-{
-  "acme": { "aiVisibility": 78, "trustScore": 85, "keywordCoverage": 65, "lastAudit": "2024-07-29T10:00:00Z" },
-  "stark": { "aiVisibility": 92, "trustScore": 95, "keywordCoverage": 88, "lastAudit": "2024-07-28T14:30:00Z" },
-  "wayne": { "aiVisibility": 85, "trustScore": 90, "keywordCoverage": 72, "lastAudit": "2024-07-27T09:00:00Z" }
-}
